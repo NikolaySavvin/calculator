@@ -247,7 +247,7 @@
       switcher.onclick = function(){
         if (switchhelper == 0) {
           switchhelper = switchhelper+1;
-          result20.style.display = "не облагается";
+          result20.style.display = "none"+"не облагается";
           result01.style.display = "none";
           result22.style.display = "none";
           result02.style.display = "none";
@@ -263,34 +263,34 @@
       year1.onclick = function(){
         let value20 = inp1.value * 20 / 100;
         let rounded20 = Math.round(value20);
-        result20.innerHTML = rounded20 + " "+"руб";
-        result01.innerHTML = inp1.value * 0 + " "+"руб";
+        result20.innerHTML = rounded20 + " "+"руб.";
+        result01.innerHTML = inp1.value * 0 + " "+"руб.";
         let value22 = inp2.value * 2.2 / 100;
         let rounded22 = Math.round(value22);
-        result22.innerHTML = rounded22 + " "+"руб";
-        result02.innerHTML = inp2.value * 0 + " "+"руб";
+        result22.innerHTML = rounded22 + " "+"руб.";
+        result02.innerHTML = inp2.value * 0 + " "+"руб.";
         let value15 = inp3.value * 1.5 / 100;
         let rounded15 = Math.round(value15);
-        result15.innerHTML = rounded15 + " "+"руб";
-        result03.innerHTML = inp3.value * 0 + " "+"руб";
+        result15.innerHTML = rounded15 + " "+"руб.";
+        result03.innerHTML = inp3.value * 0 + " "+"руб.";
         let value30 = inp4.value * 30 / 100;
         let rounded30 = Math.round(value30);
-        result30.innerHTML = rounded30 + " "+"руб";
+        result30.innerHTML = rounded30 + " "+"руб.";
         let value76 = inp4.value * 7.6 / 100;
         let rounded76 = Math.round(value76);
-        result76.innerHTML = rounded76 + " "+"руб";
+        result76.innerHTML = rounded76 + " "+"руб.";
 
         let valuetotal1 = inp4.value * 7.6 / 100;
         let roundedtotal1 = Math.round(valuetotal1);
-        total1.innerHTML = roundedtotal1 + " "+"руб";
+        total1.innerHTML = roundedtotal1 + " "+"руб.";
 
         let valuetotal2 = ((inp1.value * 20 / 100)+(inp2.value * 2.2 / 100))+((inp3.value * 1.5 / 100)+(inp4.value * 30 / 100));
         let roundedtotal2 = Math.round(valuetotal2);
-        total2.innerHTML = roundedtotal2 + " "+"руб";
+        total2.innerHTML = roundedtotal2 + " "+"руб.";
 
         let valuesaving = ((inp1.value * 20 / 100)+(inp2.value * 2.2 / 100))+((inp3.value * 1.5 / 100)+((inp4.value * 30 / 100)-(inp4.value * 7.6 / 100)));
         let roundedsaving = Math.round(valuesaving);
-        saving1.innerHTML = roundedsaving + " "+"руб";
+        saving1.innerHTML = roundedsaving + " "+"руб.";
 
         calcul.innerHTML = "1 год";
       }
@@ -298,34 +298,34 @@
       year5.onclick = function(){
         let value20 = inp1.value * 20 / 100 * 5;
         let rounded20 = Math.round(value20);
-        result20.innerHTML = rounded20 + " "+"руб";
-        result01.innerHTML = inp1.value * 0 + " "+"руб";
+        result20.innerHTML = rounded20 + " "+"руб.";
+        result01.innerHTML = inp1.value * 0 + " "+"руб.";
         let value22 = inp2.value * 2.2 / 100 * 5;
         let rounded22 = Math.round(value22);
-        result22.innerHTML = rounded22 + " "+"руб";
-        result02.innerHTML = inp2.value * 0 + " "+"руб";
+        result22.innerHTML = rounded22 + " "+"руб.";
+        result02.innerHTML = inp2.value * 0 + " "+"руб.";
         let value15 = inp3.value * 1.5 / 100*5;
         let rounded15 = Math.round(value15);
-        result15.innerHTML = rounded15 + " "+"руб";
-        result03.innerHTML = inp3.value * 0 + " "+"руб";
+        result15.innerHTML = rounded15 + " "+"руб.";
+        result03.innerHTML = inp3.value * 0 + " "+"руб.";
         let value30 = inp4.value * 30 / 100*2;
         let rounded30 = Math.round(value30);
-        result30.innerHTML = rounded30 + " "+"руб";
+        result30.innerHTML = rounded30 + " "+"руб.";
         let value76 = inp4.value * 7.6 / 100*5;
         let rounded76 = Math.round(value76);
-        result76.innerHTML = rounded76 + " "+"руб";
+        result76.innerHTML = rounded76 + " "+"руб.";
 
         let valuetotal1 = inp4.value * 7.6 / 100*5;
         let roundedtotal1 = Math.round(valuetotal1);
-        total1.innerHTML = roundedtotal1 + " "+"руб";
+        total1.innerHTML = roundedtotal1 + " "+"руб.";
 
         let valuetotal2 = ((inp1.value * 100 / 100)+(inp2.value * 11 / 100))+((inp3.value * 7.5 / 100)+(inp4.value * 60 / 100));
         let roundedtotal2 = Math.round(valuetotal2);
-        total2.innerHTML = roundedtotal2 + " "+"руб";
+        total2.innerHTML = roundedtotal2 + " "+"руб.";
 
         let valuesaving = ((inp1.value * 100 / 100)+(inp2.value * 11 / 100))+((inp3.value * 7.5 / 100)+((inp4.value * 30 / 100 * 2)-(inp4.value * 7.6 / 100 * 5)));
         let roundedsaving = Math.round(valuesaving);
-        saving1.innerHTML = roundedsaving + " "+"руб";
+        saving1.innerHTML = roundedsaving + " "+"руб.";
 
         calcul.innerHTML = "5 лет";
       }
@@ -333,40 +333,40 @@
       year10.onclick = function(){
         let value20 = inp1.value * 20 / 100 * 10;
         let rounded20 = Math.round(value20);
-        result20.innerHTML = rounded20 + " "+"руб";
+        result20.innerHTML = rounded20 + " "+"руб.";
         let value01 = inp1.value * 12 / 100 * 5;
         let rounded01 = Math.round(value01);
-        result01.innerHTML = rounded01 + " "+"руб";
+        result01.innerHTML = rounded01 + " "+"руб.";
         let value22 = inp2.value * 2.2 / 100 * 10;
         let rounded22 = Math.round(value22);
-        result22.innerHTML = rounded22 + " "+"руб";
+        result22.innerHTML = rounded22 + " "+"руб.";
         let value02 = inp2.value * 2.2 / 100 * 5;
         let rounded02 = Math.round(value02);
-        result02.innerHTML = rounded02 + " "+"руб";
+        result02.innerHTML = rounded02 + " "+"руб.";
         let value15 = inp3.value * 1.5 / 100 * 10;
         let rounded15 = Math.round(value15);
-        result15.innerHTML = rounded15 + " "+"руб";
+        result15.innerHTML = rounded15 + " "+"руб.";
         let value03 = inp3.value * 1.5 / 100 * 5;
         let rounded03 = Math.round(value03);
-        result03.innerHTML = rounded03 + " "+"руб";
+        result03.innerHTML = rounded03 + " "+"руб.";
         let value30 = inp4.value * 30 / 100 * 10;
         let rounded30 = Math.round(value30);
-        result30.innerHTML = rounded30 + " "+"руб";
+        result30.innerHTML = rounded30 + " "+"руб.";
         let value76 = inp4.value * 7.6 / 100 * 10;
         let rounded76 = Math.round(value76);
-        result76.innerHTML = rounded76 + " "+"руб";
+        result76.innerHTML = rounded76 + " "+"руб.";
 
         let valuetotal1 = (inp4.value * 76 / 100)+(inp3.value * 7.5 / 100)+(inp2.value * 11 / 100)+(inp1.value * 60 / 100);
         let roundedtotal1 = Math.round(valuetotal1);
-        total1.innerHTML = roundedtotal1 + " "+"руб";
+        total1.innerHTML = roundedtotal1 + " "+"руб.";
 
         let valuetotal2 = (((inp1.value * 200 / 100)+(inp2.value * 22 / 100))+((inp3.value * 15 / 100)+(inp4.value * 300 / 100)));
         let roundedtotal2 = Math.round(valuetotal2);
-        total2.innerHTML = roundedtotal2 + " "+"руб";
+        total2.innerHTML = roundedtotal2 + " "+"руб.";
 
         let valuesaving = (((inp1.value * 200 / 100)-(inp1.value * 60 / 100))+((inp2.value * 22 / 100)-(inp2.value * 11 / 100)))+(((inp3.value * 15 / 100)-(inp3.value * 7.5 / 100))+((inp4.value * 300 / 100)-(inp4.value * 76 / 100)));
         let roundedsaving = Math.round(valuesaving);
-        saving1.innerHTML = roundedsaving + " "+"руб";
+        saving1.innerHTML = roundedsaving + " "+"руб.";
 
         calcul.innerHTML = "10 лет";
       }
