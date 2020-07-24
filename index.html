@@ -184,10 +184,13 @@
         }
       }
 */
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
       year1.onclick = function(){
         let value20 = inp1.value * 20 / 100;
         let rounded20 = Math.round(value20);
-        result20.innerHTML = rounded20 + " "+"руб.";
+        result20.innerHTML = numberWithCommas(rounded20) + " "+"руб.";
         result01.innerHTML = inp1.value * 0 + " "+"руб.";
         let value22 = inp2.value * 2.2 / 100;
         let rounded22 = Math.round(value22);
