@@ -101,7 +101,7 @@
 		  </div>  
 		  <div class="col-4 pl-1 d-flex flex-column">
             <div class="pl-0 btn02-result">0 руб.</div>
-			<div class="pl-0"><p><sup>0% 5 лет</sup></p></div>
+			<div class="pl-0"><p><sup>0% 5 лет, 1,1% следующие 5 лет</sup></p></div>
 		  </div>
         </div>
 
@@ -291,7 +291,7 @@ function numberWithCommas(x) {
         let value22 = inp2.value * 2.2 / 100 * 10;
         let rounded22 = Math.round(value22);
         result22.innerHTML = numberWithCommas(rounded22) + " "+"руб.";
-        let value02 = inp2.value * 2.2 / 100 * 5;
+        let value02 = inp2.value * (2.2 / 100 * 5 + 1.1 / 100 * 5);
         let rounded02 = Math.round(value02);
         result02.innerHTML = numberWithCommas(rounded02) + " "+"руб.";
         let value15 = inp3.value * 1.5 / 100 * 10;
@@ -307,7 +307,7 @@ function numberWithCommas(x) {
         let rounded76 = Math.round(value76);
         result76.innerHTML = numberWithCommas(rounded76) + " "+"руб.";
 
-        let valuetotal1 = (inp4.value * 76 / 100)+(inp3.value * 7.5 / 100)+(inp2.value * 11 / 100)+(inp1.value * 60 / 100);
+        let valuetotal1 = (inp4.value * 7.6 / 100 * 10)+(inp3.value * 1.5 / 100 * 5)+(inp2.value * (2.2 / 100 * 5 + 1.1 / 100 *5))+(inp1.value * 12 / 100 * 5);
         let roundedtotal1 = Math.round(valuetotal1);
         total1.innerHTML = numberWithCommas(roundedtotal1) + " "+"руб.";
 
@@ -315,7 +315,7 @@ function numberWithCommas(x) {
         let roundedtotal2 = Math.round(valuetotal2);
         total2.innerHTML = numberWithCommas(roundedtotal2) + " "+"руб.";
 
-        let valuesaving = (((inp1.value * 200 / 100)-(inp1.value * 60 / 100))+((inp2.value * 22 / 100)-(inp2.value * 11 / 100)))+(((inp3.value * 15 / 100)-(inp3.value * 7.5 / 100))+((inp4.value * 300 / 100)-(inp4.value * 76 / 100)));
+        let valuesaving = (((inp1.value * 200 / 100)-(inp1.value * 12 / 100 * 5))+((inp2.value * 22 / 100)-(inp2.value * (2.2 / 100 * 5 + 1.1 / 100 *5)))+(((inp3.value * 15 / 100)-(inp3.value * 1.5 / 100 * 5))+((inp4.value * 300 / 100)-(inp4.value * 7.6 / 100 * 10)));
         let roundedsaving = Math.round(valuesaving);
         saving1.innerHTML = numberWithCommas(roundedsaving) + " "+"руб.";
 
