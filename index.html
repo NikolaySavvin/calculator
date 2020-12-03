@@ -315,7 +315,7 @@ function numberWithCommas(x) {
         let roundedtotal2 = Math.round(valuetotal2);
         total2.innerHTML = numberWithCommas(roundedtotal2) + " "+"руб.";
 
-        let valuesaving = (((inp1.value * 200 / 100)-(inp1.value * 12 / 100 * 5))+((inp2.value * 22 / 100)-(inp2.value * (2.2 / 100 * 5 + 1.1 / 100 *5)))+(((inp3.value * 15 / 100)-(inp3.value * 1.5 / 100 * 5))+((inp4.value * 300 / 100)-(inp4.value * 7.6 / 100 * 10)));
+        let valuesaving = ((inp1.value * 200 / 100)-(inp1.value * 12 / 100 * 5))+((inp2.value * 22 / 100)-(inp2.value * (2.2 / 100 * 5 + 1.1 / 100 *5)))+((inp3.value * 15 / 100)-(inp3.value * 1.5 / 100 * 5))+((inp4.value * 300 / 100)-(inp4.value * 7.6 / 100 * 10));
         let roundedsaving = Math.round(valuesaving);
         saving1.innerHTML = numberWithCommas(roundedsaving) + " "+"руб.";
 
